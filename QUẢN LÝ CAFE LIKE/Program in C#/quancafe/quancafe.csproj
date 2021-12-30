@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59045C1B-D3D2-446B-B28F-280CEFC941E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>quancafe</RootNamespace>
+    <AssemblyName>quancafe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFood.Designer.cs">
+      <DependentUpon>AddFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Block.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Block.Designer.cs">
+      <DependentUpon>Block.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePersional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePersional.Designer.cs">
+      <DependentUpon>ChangePersional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="frmAdCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdCategory.Designer.cs">
+      <DependentUpon>frmAdCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdFood.Designer.cs">
+      <DependentUpon>frmAdFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdTables.Designer.cs">
+      <DependentUpon>frmAdTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pay.Designer.cs">
+      <DependentUpon>Pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlusTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlusTable.Designer.cs">
+      <DependentUpon>PlusTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReFood.Designer.cs">
+      <DependentUpon>ReFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplaceTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReplaceTable.Designer.cs">
+      <DependentUpon>ReplaceTable.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFood.resx">
+      <DependentUpon>AddFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Block.resx">
+      <DependentUpon>Block.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePersional.resx">
+      <DependentUpon>ChangePersional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdCategory.resx">
+      <DependentUpon>frmAdCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdFood.resx">
+      <DependentUpon>frmAdFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdTables.resx">
+      <DependentUpon>frmAdTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay.resx">
+      <DependentUpon>Pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlusTable.resx">
+      <DependentUpon>PlusTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReFood.resx">
+      <DependentUpon>ReFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReplaceTable.resx">
+      <DependentUpon>ReplaceTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

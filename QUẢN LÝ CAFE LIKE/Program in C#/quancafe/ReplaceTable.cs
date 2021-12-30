@@ -1,0 +1,127 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace quancafe
+{
+    public partial class ReplaceTable : Form
+    {
+        private DataTable tableBill;
+        private bool condition = true;
+        public ReplaceTable()
+        {
+            InitializeComponent();
+        }
+        public ReplaceTable(string nameTableFrom) : this()
+        {
+            loadDataTable();
+            cbbTableFrom.Text = nameTableFrom;
+        }
+        //Load len cho nguoi dung chon ban
+        private void loadDataTable()
+        {
+            DataProvider provider = new DataProvider();
+            DataTable table = provider.loadTableF();
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                cbbTableFrom.Items.Add(table.Rows[i][0].ToString());
+                cbbTableTo.Items.Add(table.Rows[i][0].ToString());
+            }
+        }
+        //Nhan nut Chuyen ban
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+            //Dieu kien chuyen ban
+            if (condition == true && cbbTableFrom.Text != cbbTableTo.Text && cbbTableTo.Text != "")
+            {
+                DialogResult ms = MessageBox.Show("Bạn có muốn chuyển bàn " + cbbTableFrom.Text + " đến bàn " + cbbTableTo.Text + " không?", "Xác nhận", MessageBoxButtons.YesNoCancel, MessageBoxIcon.None);
+                //chuyen ban
+                if (ms == DialogResult.Yes)
+                {
+                    moveTable();
+                    MessageBox.Show("Đã chuyển bàn thành công!", "Hoàn tất", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else if (ms == DialogResult.No)
+                {
+                    this.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chuyển bàn không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //Ham chuyen ban
+        private void moveTable()
+        {
+            //Gan Food cho ban moi
+            for (int i = 0; i < tableBill.Rows.Count; i++)
+            {
+                DataProvider provider = new DataProvider();
+                string nameF = tableBill.Rows[i][0].ToString();
+                int count = Int16.Parse(tableBill.Rows[i][1].ToString());
+                provider.move_food(cbbTableTo.Text, nameF, count);
+            }
+            //Gan Data cho ban moi + Xoa Bill va Table cu
+            DataProvider providerN = new DataProvider();
+            providerN.move_table(float.Parse(txtTotal.Text), cbbTableTo.Text, cbbTableFrom.Text);
+        }
+        //Kiem tra ban A
+        private void cbbTableFrom_TextChanged(object sender, EventArgs e)
+        {
+            loadCheckTable();
+        }
+        private void loadCheckTable()
+        {
+            try
+            {
+                //Dieu kien hop le
+                DataProvider provider = new DataProvider();
+                tableBill = provider.check_table(cbbTableFrom.Text);
+                dgvTableFrom.DataSource = tableBill;
+                txtTotal.Text = tableBill.Rows[0][2].ToString();
+                condition = true;
+            }
+            catch
+            {
+                //Dieu kien khong hop le
+                MessageBox.Show("Không thể chọn bàn này!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                condition = false;
+            }
+        }
+        //Kiem tra ban B
+        private void cbbTableTo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadCheckTableB();
+        }
+        private void loadCheckTableB()
+        {
+            try
+            {
+                DataProvider provider = new DataProvider();
+                DataTable tableBill = provider.check_table(cbbTableTo.Text);
+                if (tableBill.Rows[0][2].ToString() != null)
+                {
+                    //Dieu kien khong hop le
+                    MessageBox.Show("Không thể chọn bàn này!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    condition = false;
+                }
+                //Dieu kien hop le
+                condition = true;
+            }
+            catch { }
+        }
+
+        private void ReplaceTable_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

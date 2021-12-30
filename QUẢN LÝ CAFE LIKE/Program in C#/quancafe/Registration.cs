@@ -1,0 +1,70 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace quancafe
+{
+    public partial class fRegistration : Form
+    {
+        public fRegistration()
+        {
+            InitializeComponent();
+        }
+        //ham load thong tin
+        private void Account_Load(object sender, EventArgs e)
+        {
+            load();
+        }
+        private void load()
+        {
+            DataProvider provider = new DataProvider();
+            DataTable table = provider.loadAccount();
+        }
+        private void clear()
+        {
+            txtUsername.ResetText();
+            txtDisplayname.ResetText();
+            txtPassword.ResetText();
+            rdbAdmin.Checked = false;
+        }
+        //su kien buttion click Singup ( dang ky tai khoan)
+        private void btnSingup_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string username = txtUsername.Text;
+                string displayname = txtDisplayname.Text;
+                string password = txtPassword.Text;
+                string type = "CASHIER"; // Cashier => thu ngân
+                if (rdbAdmin.Checked == true)
+                {
+                    type = "ADMIN"; //admin => quản lý
+                }
+                DataProvider provider = new DataProvider();
+                provider.AddAccount(username, displayname, password, type);
+                // thong bao nguoi dung SingUp thanh cong 
+                MessageBox.Show("Đăng ký thành công!\n Tài khoản " + displayname + " đã được đăng ký.", "Đã đăng ký", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                load();
+                clear();
+            }
+            catch
+            {
+                // thong bao loi khi nguoi dung nhap du lieu username, displayname trung voi nguoi dung khac
+                MessageBox.Show("Không đăng ký tài khoản được", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        // su kien buttion click thoat
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            frmLogin f = new frmLogin();
+            this.Hide();
+            f.Show(); // thoat ra giao dien login
+        }
+    }
+}

@@ -1,0 +1,50 @@
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\bin\Debug\quancafe.exe.config
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\bin\Debug\quancafe.exe
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\bin\Debug\quancafe.pdb
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.csproj.AssemblyReference.cache
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.frmAdAccount.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.frmAddFood.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.Block.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.ChangePersional.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.frmAdCategory.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.frmAdFood.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.frmAdTables.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.frmLogin.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.frmMain.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.frmPay.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.PlusTable.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.ReFood.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.fRegistration.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.Properties.Resources.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.ReplaceTable.resources
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.csproj.GenerateResource.cache
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.csproj.CoreCompileInputs.cache
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.exe
+C:\Users\chuon\Downloads\Program in C#\quancafe\quancafe\obj\Debug\quancafe.pdb
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\bin\Debug\quancafe.exe.config
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\bin\Debug\quancafe.exe
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\bin\Debug\quancafe.pdb
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.csproj.AssemblyReference.cache
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.frmAdAccount.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.frmAddFood.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.Block.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.ChangePersional.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.frmAdCategory.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.frmAdFood.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.frmAdTables.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.frmLogin.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.frmMain.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.frmPay.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.PlusTable.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.ReFood.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.fRegistration.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.Properties.Resources.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.ReplaceTable.resources
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.csproj.GenerateResource.cache
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.csproj.CoreCompileInputs.cache
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.exe
+D:\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.pdb
+D:\Tai Xuong\QUẢN LÝ CAFE LIKE\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.csproj.AssemblyReference.cache
+D:\Tai Xuong\QUẢN LÝ CAFE LIKE\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.csproj.SuggestedBindingRedirects.cache
+D:\Tai Xuong\QUẢN LÝ CAFE LIKE\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.exe
+D:\Tai Xuong\QUẢN LÝ CAFE LIKE\QUẢN LÝ CAFE LIKE\Program in C#\quancafe\obj\Debug\quancafe.pdb
